@@ -12,7 +12,8 @@ alias ..='cd ../'
 alias ...='.. && ..'
 alias ....='... && ..'
 alias .....='.... && ..'
-alias ......='..... && ..' 
+alias ......='..... && ..'
+alias ls='ls --color=always'
 alias ll='ls -la --group-directories-first'
 
 # Commands to run programs a special way

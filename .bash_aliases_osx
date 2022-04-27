@@ -1,0 +1,6 @@
+# File: ~/.bash_aliases_osx
+# Description: OSX Specific aliases
+# Souced from ~/.bashrc
+
+alias ls='gls --color=always'
+alias ll='gls -la --color=always  --group-directories-first'
