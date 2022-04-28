@@ -11,7 +11,3 @@ fi
 # Prevents me from having to type my ssh passphrase
 # except for once on system reboot
 eval `keychain --eval --agents ssh id_rsa`
-
-# Cleanup from last execution and start pulse audio
-#alias audio="sudo rm -r /tmp/.esd-*; pulseaudio --start"
-#audio
