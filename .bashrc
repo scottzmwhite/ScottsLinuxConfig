@@ -11,11 +11,6 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
-# Machine specific configuration
-if [ -f $HOME/.bashrc_machine ]; then
-	source $HOME/.bashrc_machine
-fi
-
 # Generic Machine Independent Aliases
 if [ -f $HOME/.bash_aliases ]; then
 	source $HOME/.bash_aliases
@@ -24,6 +19,11 @@ fi
 # Generic Machine Independent Functions
 if [ -f $HOME/.bash_functions ]; then
 	source $HOME/.bash_functions
+fi
+
+# Machine specific configuration
+if [ -f $HOME/.bashrc_machine ]; then
+	source $HOME/.bashrc_machine
 fi
 
 # don't put duplicate lines in the history. See bash(1) for more options
@@ -43,7 +43,7 @@ HISTTIMEFORMAT="%Y%m%d%H%M%S "
 export PS1='\[\e[0;36m\]\u@\H\[\e[1;35m\] \w\[\e[0;32m\] $ '
 
 # Setup PATH
-PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/sbin"
+PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin"
 PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 export PATH
 
