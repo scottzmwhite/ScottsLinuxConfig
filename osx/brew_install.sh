@@ -44,6 +44,9 @@ pretty_print "Installing GNU find, locate, updatedb and xargs..."
 pretty_print "Installing the most recent verions of some OSX tools"
 	brew tap homebrew/dupes
 	brew install homebrew/dupes/grep
+	
+pretty_print "Installing development tools"
+	brew install boost
 
 printf 'export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"' >> ~/.zshrc
 export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
