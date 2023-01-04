@@ -21,6 +21,11 @@ if [ -f $HOME/.bash_functions ]; then
 	source $HOME/.bash_functions
 fi
 
+# Bazel bash-completion
+if [ -f /etc/bash_completion.d/bazel ]; then
+	source /etc/bash_completion.d/bazel
+fi
+
 # Machine specific configuration
 if [ -f $HOME/.bashrc_machine ]; then
 	source $HOME/.bashrc_machine
